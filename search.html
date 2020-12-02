@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Search</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+  </head>
+  <body>
+  <nav class="top-Nav">
+    
+    <span id="menu">&#9776; C-alert</span>
+    
+          <!--li><a href="system/signin.html">Sign in</a></li>
+          <li><a href="system/signup.html">Sign up</a></li-->
+            <li><a href="signin.html" class="notlogged" style="display: none;">Sign in</a></li>
+            <li><a href="signup.html" class="notlogged" style="display: none;" >Sign up</a></li>
+            <li><a  id="log-user-out" class="loggedIN" style="display: none;">Sign Out</a></li>
+   
+  </nav>
+
+  <nav id="sideMenu" class="sidenav">
+    <ul>
+      <li><h2>Search</h2></li>
+      <a href="#" class="closebtn" id="closeNav">&times;</a>
+      <li><a href="profile.html"  class="loggg">Profile</a></li>
+      <li><a href="alert.html"    class="loggg">Alert Now</a></li>
+      <li><a href="notification.html"    class="loggg">MyAlerts</a></li>
+
+      <li><a href="logout" id="log-user-out" class="loggg">Logout</a></li>
+  </ul>
+</nav>
+
+
+<div class="searchDiv">
+   <input type="search" name="" placeholder="search .."   id="searchText" >
+   <a id="nowSearch">search</a>
+</div>
+  <br><br><br><br>
+<br><br>
+   
+
+<div id="viewSearch"></div>
+
+
+
+
+<a href="alert.html" class="btnCreat"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+   
+<br><br>
+  <nav class="bottom-Nav">
+    <ul class="">
+      <li><a id="Home-id"      href="index.html"><div class="h-icon"><i class="fa fa-home" aria-hidden="true" ></i></div>       <div class="a-name">Home</div></a></li>
+      <li><a id="discover-id"  href="heatmap.html"><div class="h-icon"><i class="fa fa-users" aria-hidden="true"></i></div>        <div class="a-name">Stats</div></a></li>
+      <li><a id="search-id"    href="search.html"><div class="h-icon"><i class="fa fa-search" aria-hidden="true"></i></div>       <div class="a-name">Search</div></a></li>
+      <li><a id="bookmark-id"  href="notification.html"><div class="h-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></div>   <div class="a-name">My Alerts</div>    </a></li>
+      <li><a id="profile-id"   href="profile.html"><div class="h-icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>       <div class="a-name">Profile</div></a></li>
+    </ul> 
+  </nav>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+  <script src="./fuctions/app.js"></script>
+  <script src="./fuctions/react.js"></script>
+  <script src="./fuctions/search.js"></script>
+  
+    
+
+  </body>
+</html>
+
+
+    

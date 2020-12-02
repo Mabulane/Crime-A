@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--https://bootsnipp.com/snippets/3x8BB-->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
+    <link rel="icon" href="alert1.jpg" sizes="32x32" type="image/jpg">
+    <title>Home:  Crime Alert</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="police.css">
+    <!--link rel="stylesheet" href="alertcard.css"-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+  </head>
+  <body>
+  <nav class="top-Nav">
+    
+    <span id="menu">&#9776; C-alert</span>
+          <li><a href="signin.html" class="notlogged" style="display: none;">Sign in</a></li>
+          <li><a href="signup.html" class="notlogged" style="display: none;" >Sign up</a></li>
+          <li><a  id="log-user-out" class="loggedIN" style="display: none;">Sign Out</a></li>
+  </nav>
+
+  <nav id="sideMenu" class="sidenav">
+  
+    <ul>
+          <li><h2>Crime Alert</h2></li>
+          <a href="#" class="closebtn" id="closeNav">&times;</a>
+          <!--li><a href="profile.html" class="loggedIN" style="display: none;" >Profile</a></li-->
+          
+          <li><a href="police.report.html" class="loggedIN" style="display: none;">Report</a></li>
+ 
+          <li><a href="logout" id="log-user-out"class="loggedIN" style="display: none;">Logout</a></li>
+  </ul>
+</nav>
+
+    <div class="filter">
+        <ul>
+          <li><a href="police.index.html" id="">Alerts</a></li>
+          <li><a href="police.report.html" id="">Police Report</a></li>
+        </ul>
+
+    </div>
+  <br><br><br>
+  
+  <br><br><br>
+  <h2 class="hHearder">Follow Up</h2><br>
+  <div id="map"></div>
+  
+
+  
+
+
+
+    
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+  <script src="./fuctions/app.js"></script>
+  <script src="./fuctions/react.js"></script>
+  <script src="./fuctions/a.index.js"></script>
+  <script src="./fuctions/a.signout.js"></script>
+ 
+  <script>
+    // Note: This example requires that you consent to location sharing when
+    // prompted by your browser. If you see the error "The Geolocation service
+    // failed.", it means you probably did not give permission for the browser to
+    // locate you.
+    var map, infoWindow;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 25.4834 , lng: 28.1068},
+        zoom: 2
+      });}
+    </script>
+    
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlx1QJrb5KcYfM-NS-Pco7BV154knNlUY&callback=initMap" async defer></script>
+ 
+  </body>
+</html>
+
+
+    

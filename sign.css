@@ -1,0 +1,232 @@
+body{
+	margin: 0;
+	padding: 0;
+	background:#ECEFF1;
+	background-position: absolute;
+	font-family: sans-serif;
+	
+}
+
+header{
+	width: 100%;
+	background: white;
+	height: 40px;
+	top: 0px;
+	padding-top: 20px;
+}
+header a{
+	padding-left: 20px;
+	
+	text-decoration: none;
+	font-weight: bold;
+	color:  rgba(243, 43, 17, 0.918);
+}
+
+
+
+.loginbox{
+	/*
+	width: 380px;
+	height: 420px;
+	background:white;
+	background-size:cover;
+	color: blue;  
+	top: 45%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing :border-box;
+	padding: 70px 30px;*/
+	
+	width: 330px;
+	
+	background:white;
+	background-size:cover;
+	color:  rgba(243, 43, 17, 0.918); 
+	top: 45%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing :border-box;
+	padding: 30px 30px;
+}
+
+h1{
+	margin:0;
+	padding:0 0 20px; 
+	text-align:center;
+	font-size:22px;
+	
+}
+
+
+.loginbox p{
+	margin:0;
+	padding:0;
+	text-align :left; 
+	font-weight:bold; 
+}
+
+.loginbox input{
+	margin-bottom:20px;
+	width:100%;
+}
+.loginbox input[type="text"],input[type="password"]
+{ 
+	outline: none;
+	border: none;
+	font-size:16px;
+	height: 40px;
+	color: rgb(8, 8, 8); 
+	background: transparent;
+	
+	border-bottom: 1px solid rgb(17, 146, 221);
+
+}
+
+.loginbox input[type="submit"]
+{
+	outline: none;
+	border: none;
+	height: 30px;
+	font-size: 18px;
+	color: #fff; 
+	background: #fb2525;
+	border-bottom: 1px solid #fff;
+	border-radius: 20px;
+	
+}
+.loginbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: skyblue;
+	color: #000;
+	
+}
+
+.loginbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color:darkgrey;
+	
+}
+.loginbox a:hover
+{
+	color: #ffc107;
+}
+
+
+
+.modalup  {
+    top:50px;
+	width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+
+}
+
+.forgot {
+	line-height: 20px;
+	text-align: center;
+}
+
+
+
+
+.loader
+{
+	border:10px solid #f3f3f3;
+	border-radius:50%;
+	border-top:10px solid #ffc107;
+	width:25px;
+	height:25px;
+	top: 50%;
+	left: 50%;
+	animation:spin 1s linear infinite;
+	
+	position: fixed;
+	
+	display: none;
+
+}
+@keyframes spin
+{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+
+}
+/*
+<div id="pgLoader" class = "loader"></div>*/
+
+
+
+
+/*==================Pop UP=============================*/
+.errpopUp{
+    top: 0px;
+    bottom:0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.432);
+    margin: auto;
+    background-size: cover;
+    overflow: hidden;
+    display: none;
+    justify-items: center;
+    align-items: center;
+}
+.errpopUp .errpopUp-content{
+    margin:  auto;
+    width: 60%;
+    height: 50px;
+    background: white;
+    position: relative;
+    border-radius: 3px;
+    padding: 20px;
+}
+.errpopUp .errpopUp-content [type="text"]{
+    border: none;
+    border-bottom: 3px solid  rgb(116, 201, 241);;
+    margin: auto;
+    box-shadow: none;
+    color: rgb(252, 0, 50);
+    font-weight: bolder;
+    padding-left: 3px;
+    height: 20px;
+    width: 80%;
+    
+}
+
+.errpopUp .errpopUp-content [type="text"]:focus{
+    border: none;
+    box-shadow: none;
+    border-bottom: 3px solid  rgb(77, 129, 25);
+    margin: auto;
+   
+}
+
+
+.errpopUp .errpopUp-content  #updateBtn::before{
+    position: relative;
+    color: rgb(121, 226, 17);
+    font-weight: bolder;
+    cursor: pointer;
+    content: "✔";
+    padding-left: 15px;
+    padding-right: 10px;
+    float: right;
+}
+/* END Pop UP=============================*/
+
+.callPopUp1{
+    padding: 5px;
+}
+
+.adMMM{
+    font: bolder;
+    color: blue;
+    font-size: 18px;
+}

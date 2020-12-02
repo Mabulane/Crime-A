@@ -1,0 +1,320 @@
+/*geo map*/
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  margin: 0 auto;
+  height: 400px;
+  width: 95%;
+  background:#d9e8f3 ;
+  border: 5px solid white;
+  padding-bottom: 50px;
+}
+body { background: #ECEFF1; 
+  color: rgba(0,0,0,0.87);
+  font-family: Roboto, Helvetica, Arial, sans-serif; 
+  margin: 0;
+  padding: 0; 
+}
+/*CDN   integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"*/
+.top-Nav{
+top: 0px;
+background:white;
+position: fixed;
+width: 100%;
+padding: 14px;
+
+/*border-bottom: 1px solid grey;*/
+z-index: 99;
+}
+/*---------------------Top Nav-------1598947751-------------------*/
+.top-Nav  li {
+list-style: none;
+float: right;
+padding: 0 20px;
+padding-left: 0px;
+font-size: 13px;
+
+}
+.top-Nav  li a{
+display: block;
+padding: 8px;
+text-decoration: none;
+height: 100%;
+color: darkgray;
+border-radius: 3px;
+}
+.top-Nav  li a:hover{
+background: darkorange;
+color: white;
+}
+
+/*----------------------------------BOTTOM NAV------------------------------*/
+.bottom-Nav{
+bottom: 0px;
+background:white;
+position: fixed;
+width: 100%;
+z-index: 1;
+
+}
+
+
+
+.bottom-Nav ul li  {
+float: left;
+list-style: none;
+text-align: center;
+display: block;
+
+}
+
+.bottom-Nav ul li  a:first-child{
+
+    padding-left:5px;
+    
+    }
+.bottom-Nav ul li  a {
+display: block;
+padding-left:17px;
+padding-right:15px;
+padding-bottom: 20px;
+text-decoration: none;
+font-weight: bold;
+color:  darkorange;
+}
+
+.bottom-Nav ul li  a .h-icon{
+width: 30px;
+height: 30px;
+overflow: hidden; 
+margin: 0 auto 5px;
+
+}
+.bottom-Nav ul li  a .h-icon .fa{
+width: 100%;
+height: 100%;
+line-height:5px;
+transition:0.5s;
+
+}
+.bottom-Nav ul li  a:hover {
+color:rgb(241, 13, 13); 
+transform: translateY(-10%);  
+}
+
+.bottom-Nav ul li  a .a-name{
+font-size: 10px;
+} 
+/*------------Alerts Elemts--------------------*/
+.container{
+
+height: 300px;
+width: 99%;
+margin: 1px auto;
+padding-top: 10px;
+background: white;
+color: turquoise;
+}
+/*---------------SIDE NAV --------------*/
+
+.sidenav {
+height: 100%;
+width: 0px;
+position: fixed;
+z-index: 99;
+top: 0px;
+left: 0px;
+background: white;
+overflow-x: hidden;
+padding-top: 60px;
+}
+
+.sidenav h2 {
+color: rgba(230, 26, 26, 0.918);
+}
+.sidenav ul li {
+list-style: none;
+display: block;
+}
+.sidenav a {
+padding: 10px;
+text-decoration: none;
+font-size: 20px;
+color:black;
+display: block;
+
+}
+
+.sidenav a:hover {
+color: rgba(252, 17, 17, 0.918);
+}
+
+#menu {
+padding: 10px;
+border-radius: 4px;
+color: rgba(243, 43, 17, 0.918);
+font-weight: bold;
+background: white;
+font-weight: bold;
+cursor: pointer;
+}
+.sidenav .closebtn{
+position: absolute;
+top: 0px;
+right: 25px;
+font-size: 36px;
+}
+
+
+
+
+/*----------------filter----======================================-*/
+
+.filter{
+    top: 40px;
+    width: 100%;
+    background: white;
+    position: fixed;
+    color: #ECEFF1;
+    z-index: 1;
+    border-bottom: 1px solid rgb(140, 231, 238);
+    padding: 0px;
+}
+
+.filter ul li {
+    float: left;
+    
+     list-style: none;
+     
+}
+.filter ul li a{
+    text-decoration: none;
+    display: block;
+    color: coral; 
+    padding: 10px;
+}
+
+
+.filter ul li a:hover{
+    background: rgba(206, 255, 253, 0.877);
+    color: coral; 
+}
+
+
+
+/*---------create alerts=========================================----*/
+.createalert{
+height: 300px;
+width: 99%;
+margin: 1px auto;
+padding-top: 10px;
+background: white;
+line-height: 40px;
+}
+.createalert .btnA{
+position: relative;
+bottom: 0px;
+cursor: pointer;
+padding-top: 11px;
+padding-bottom: 11px;
+padding-left: 15px;
+padding-right: 15px;
+background: #ECEFF1;;
+border: none;
+border-radius:5px ;
+}
+
+
+
+
+.btnCreat{
+top: 75%;
+z-index: 1;
+position: fixed;
+left: 78%;
+
+
+}
+.btnCreat i{
+font-size: 20px;
+border-radius: 5px solid tomato;
+background: rgba(255, 255, 255, 0.7);
+color: tomato;
+padding: 20px;
+border-radius: 50%;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px){
+
+    .bottom-Nav ul li  a {
+        padding-left:2000px;
+        padding-right:1152.3px;
+    }
+}
+
+@media screen and (min-width: 1068px){
+
+    .bottom-Nav ul li  a {
+        padding-left:100px;
+        padding-right:132.3px;
+    }
+}
+
+
+
+@media screen and (min-width: 868px){
+ 
+    .bottom-Nav ul li  a {
+        padding-left:30px;
+        padding-right:90px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .bottom-Nav ul li  a:first-child{
+
+        padding-left:5px;
+        
+        }
+    .bottom-Nav ul li  a {
+        padding-left:57px;
+        padding-right:95px;
+    }
+}
+
+
+/*----------------------laptopScreen
+
+
+@media screen and (max-width: 768px){
+    .bottom-Nav ul li  a:first-child{
+
+        padding-left:5px;
+        
+        }
+    .bottom-Nav ul li  a {
+        padding-left:57px;
+        padding-right:95px;
+    }
+}
+
+*/
+
+
+
+.sucM{
+    background: rgba(106, 247, 228, 0.507);
+    margin: auto ;
+    left: 25%;
+    top: 10%;
+    position: relative;
+    padding: 20px;
+    border-radius: 2px;
+    color: rgb(188, 243, 35);
+}

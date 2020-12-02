@@ -1,0 +1,112 @@
+
+.user_p .userProfile {
+    margin: auto;
+    background: white;
+    padding: 40px;
+    width:70%;
+    color: black;
+    box-shadow: 0  0 25px 2px rgba(255, 154, 3, 0.1) ; 
+    line-height: 28px;
+}
+.user_p .userProfile label{ 
+    color: rgb(117, 37, 12);
+    font-size: 18px;
+}
+.user_p .userProfile .title-label{
+    font-size: 20px;
+    font-weight: bold;
+    color: coral;
+    transform: translateY(-30px);
+    position: absolute;
+    padding-left: 30px;
+}
+
+.user_p .userProfile .info{
+    width: 100%;
+    color: black;
+    border-bottom: 0.1px solid rgb(66, 46, 46);
+    padding-right: 30%;
+   
+}
+.user_p .userProfile .user_i{
+    width: 100%;
+    height: 200px;
+    background: rgb(76, 147, 150);
+    transform: translateY(-70px);
+    position: obsolate;
+    border-radius: 30px;
+    padding: 0;
+}
+
+.user_p .userProfile .user_i img{
+        width: 100%;
+        border-radius: 30px;
+        
+}
+
+/*==================Pop UP=============================*/
+.popUp{
+    top: 0px;
+    bottom:0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.432);
+    margin: auto;
+    background-size: cover;
+    overflow: hidden;
+    display: none;
+    justify-items: center;
+    align-items: center;
+}
+.popUp .popUp-content{
+    margin:  auto;
+    width: 60%;
+    height: 50px;
+    background: white;
+    position: relative;
+    border-radius: 3px;
+    padding: 20px;
+}
+.popUp .popUp-content [type="text"]{
+    border: none;
+    border-bottom: 3px solid  rgb(116, 201, 241);;
+    margin: auto;
+    box-shadow: none;
+    color: rgb(252, 0, 50);
+    font-weight: bolder;
+    padding-left: 3px;
+    height: 20px;
+    width: 80%;
+    
+}
+
+.popUp .popUp-content [type="text"]:focus{
+    border: none;
+    box-shadow: none;
+    border-bottom: 3px solid  rgb(77, 129, 25);
+    margin: auto;
+   
+}
+
+
+.popUp .popUp-content  #updateBtn::before{
+    position: relative;
+    color: rgb(121, 226, 17);
+    font-weight: bolder;
+    cursor: pointer;
+    content: "✔";
+    padding-left: 15px;
+    padding-right: 10px;
+    float: right;
+}
+/* END Pop UP=============================*/
+
+.callPopUp1{
+    padding: 5px;
+}
+
+#verifyError{
+    color: red;
+    display: none;
+}

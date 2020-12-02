@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.maps{
+    top: 5px;
+    height: 600px;
+    width: 100%;
+    
+    background: tomato;
+}
+#chartPage{
+    margin:auto;
+    position: relative;
+    background: red;
+    height: 100%;
+    align-items: center;
+}
+
+.tableA{
+    margin: 0;
+    
+    left: 25%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+.tableA th{
+    text-align: left;
+    color: white;
+    font-weight: bolder;
+    font-size: 13px;
+    background-color: rgb(241, 106, 16);
+}
+.tableA td, th {
+border: 1px solid #dddddd;
+text-align: left;
+font-size: 10px;
+ padding: 10px;
+}
+
+.tableA tr:nth-child(even) {
+background-color: #dddddd;
+
+}
+
+.rheading{
+    margin: auto;
+    text-align: center;
+    color: tomato;
+}

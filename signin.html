@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <title>signin</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">C-Alert</a>
+  </header>
+ <!-------------------------- sign up  page  ----------------------------------->
+    <div class="loginbox">
+          <h1>Sign In<h1> 
+
+            <form class ="signin" id="signin-form" >
+                  <P>Email</P>
+                  <input  type="text" placeholder="Enter email" id="user-email" autocomplete="username" required>
+                  <p>Password</p>   
+                  <input id="user-password" type="password" placeholder ="Enter password" autocomplete="current-password" required>
+                  <input type="submit" id="submit" value="Login"><br>
+                  <a href ="signup.html">Create Account</a><br>
+                  <a href="resetpass.html">Forgot your Password?</a>	
+                  <a href="police.register.html" class="adMMM">Admin</a>
+            </form>
+    </div>
+  <!--div class="errpopUp">
+      <div class="errpopUp-content">
+          <label for="">Update    :</label><label for="">Name</label>
+          <input type="text" name="" id="edit">   <a id="updateBtn"></a>
+      </div>
+  </div--> 
+    <div id="pgLoader" class = "loader"></div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+</script>
+
+<script src="./fuctions/app.js"></script>
+<script src="./fuctions/a.SignIn.js"></script>
+
+
+</body>
+</html>

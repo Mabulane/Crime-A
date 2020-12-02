@@ -1,0 +1,202 @@
+.top-Nav{
+   background-color: cornflowerblue; 
+   color: white;
+}
+
+
+.container{
+    color: rgb(76, 192, 238);
+}
+    .sidenav {
+        color: white;
+        background-color: rgb(76, 192, 238); 
+    }
+    .sidenav ul h2{
+        color: white;
+    }
+
+    .sidenav ul li a{
+        color: white;
+    }
+
+#menu {
+    background-color: rgb(76, 192, 238);
+    color: white;
+}
+/*---------Filter- ----------*/
+
+.filter ul li a{
+    color: rgb(76, 192, 238);
+}
+
+.filter ul li a:hover{
+    color: rgb(9, 70, 238);
+}
+/*============================REPORT TABLE VIEW*/
+.psRep{
+    margin: 0;
+    
+    left: 25%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+.psRep th{
+    text-align: left;
+    color: white;
+    font-weight: bolder;
+    font-size: 13px;
+    background-color:  rgb(76, 192, 238); 
+}
+.psRep td, th {
+border: 1px solid #dddddd;
+text-align: left;
+font-size: 10px;
+ padding: 10px;
+}
+
+.psRep tr:nth-child(even) {
+background-color: #dddddd;
+
+}
+
+.hHearder{
+    margin: auto;
+    text-align: center;
+    color: rgb(76, 192, 238);
+}
+
+.hDd{
+    color: rgb(76, 192, 238);
+}
+
+
+/*===================Accept Alert=========================*/
+
+.AcceptBtn{
+
+    text-decoration: none;
+    background-color: turquoise;
+    color: white;
+    position: relative;
+    float: right;
+    padding: 12px;
+    border-radius: 5px;
+    transform: translateY(-30px);
+}
+
+.a-card{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: rgb(25, 186, 235);
+    border-bottom: 1px solid rgb(76, 192, 238) ;
+}
+.a-card .a-info {
+    padding: 20px;
+}
+.location{
+    color: rgb(25, 186, 235);
+}
+
+.a-card .a-media img{
+    width: 50%;
+    max-width:50%;
+    object-fit: cover;
+    display: flex;
+
+    
+}
+
+@media screen and (max-width: 1068px){
+    .a-card{
+        max-width: 50%;
+    }
+    a.a-media{
+      
+        
+    }
+}
+@media screen and (max-width: 868px){
+    .a-card{
+     
+        flex-direction: column;
+
+    }
+    .a-media{
+       min-width: 100%;
+       max-width: 100%;
+       
+    }
+}
+
+@media screen and (max-width: 768px){
+    .a-card{
+        
+        flex-direction: column;
+
+    }
+    .a-media{
+       min-width: 100%;
+       max-width: 100%;
+       
+    }
+}
+
+
+/*===================SEARCING FOR =========================*/
+#map{
+    margin: 0 auto;
+    height: 400px;
+    width: 95%;
+    background:#d9e8f3 ;
+    border: 5px solid rgb(25, 186, 235);
+    padding-bottom: 50px;
+  }
+
+
+  /*===================police Rister =========================*/
+
+header{
+background-color: rgb(25, 186, 235);
+
+}
+  
+header a{
+    color: white;
+}
+.signup input[type ="text"],input[type="password"]{
+    border: 1px solid rgb(25, 186, 235);
+}
+.signup .pv{
+    border: 1px solid rgb(25, 186, 235);
+}
+.signup input[type="submit"]{
+    border: 1px solid rgb(189, 219, 228);
+    color: rgb(212, 22, 230);
+}
+
+.signup input[type="submit"]:hover
+{
+    cursor: pointer;
+	background:  rgb(25, 186, 235);
+	color: white;
+}
+
+.signin p{
+    color: turquoise;
+}
+
+.loginbox{
+    top: 55%;
+	left: 50%;
+    width: 430px;
+    
+}
+
+.loginbox input[type="submit"]{
+
+    background: rgb(25, 186, 235);
+}
+

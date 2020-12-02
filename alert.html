@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Now</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+  <nav class="top-Nav"> 
+    
+    <span id="menu">&#9776; C-alert</span>
+
+     <li><a  id="log-user-out" class="loggedIN" style="display: none;">Sign Out</a></li>
+  </nav>
+
+  <nav id="sideMenu" class="sidenav">
+   
+    <ul>
+      <li><h2>Alert Now</h2></li>
+      <a href="#" class="closebtn" id="closeNav">&times;</a>
+      <li><a href="index.html" class="loggedIN" style="display: none;" >Home</a></li>
+      <li><a href="notification.html"    class="loggg">My Alerts</a></li>
+      
+      
+      <li><a href="logout" id="log-user-out"class="loggedIN" style="display: none;">Logout</a></li>
+</ul>
+</nav>
+  <br><br><br><br>
+    <div class="createalert">
+      <form class="createalert" id="create-alert">
+        <label for="myBrowser">Choose Alert list:</label><br>
+        <input list="browsers" id="altName" name="myBrowser"/>
+        <datalist id="browsers">
+          <option value="Murder">
+          <option value="Rape">
+          <option value="Car theft">
+          <option value="Mag">
+          <option value="Human Traficking"></option>
+          <option value="Brekin">
+          <option value="Vandelisim">
+        </datalist><br>
+        <label for="">Discription</label><br>
+        <input type="text" name="" id="disc"><br>
+        <!--label for="">Location</label><br>
+        <input type="text" name="" id="location"><br-->
+        <label for="provinces" >Select a Province:</label>
+                    <select class="pv" name="provinces" placeholder="choose" id="location">
+                       <option value="select">select your province</option>  
+                      <option value="Mpumalanga">Mpumalanga</option>
+                        <option value="Limpopo">Limpopo</option>
+                        <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                        <option value="North West">North West</option>
+                        <option value="Northern Cape">Northern Cape</option>
+                        <option value="Western Cape">Western Cape</option>
+                        <option value="Free State">Free State</option>
+                        <option value="Gauteng">Gauteng</option>
+                    </select> 
+                    <br>
+        
+        <botton type="file" name="media" >  <botton id="selectFile"></botton>
+
+        <input type="submit" value="submit" id="submit" class="btnA">
+      </form>
+    </div>
+    <div class="popUp" style="display: none;">
+      <div class="popUp-content" ></div>
+      <span class="sucM">Alert succefully sent</span>
+    </div> 
+<br>
+    <div id="map"></div>
+    
+    <br><br><br><br><br><br>
+  <nav class="bottom-Nav">
+    <ul class="">
+      <li><a id="Home-id"      href="index.html"><div class="h-icon"><i class="fa fa-home" aria-hidden="true" ></i></div>       <div class="a-name">Home</div></a></li>
+      <li><a id="discover-id"  href="heatmap.html"><div class="h-icon"><i class="fa fa-users" aria-hidden="true"></i></div>        <div class="a-name">Stats</div></a></li>
+      <li><a id="search-id"    href="search.html"><div class="h-icon"><i class="fa fa-search" aria-hidden="true"></i></div>       <div class="a-name">Search</div></a></li>
+      <li><a id="bookmark-id"  href="notification.html"><div class="h-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></div>   <div class="a-name">My Alerts</div>    </a></li>
+      <li><a id="profile-id"   href="profile.html"><div class="h-icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>       <div class="a-name">Profile</div></a></li>
+    </ul> 
+  </nav>
+
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <script src="./fuctions/app.js"></script>
+    <script src="./fuctions/react.js"></script>
+    <script src="./fuctions/c.Alerts.js"></script>
+    <script src="./fuctions/a.signout.js"></script>
+      
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+      
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+      
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+      
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+      </script>
+      
+      
+     
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlx1QJrb5KcYfM-NS-Pco7BV154knNlUY&callback=initMap" async defer></script>
+    
+ 
+</body>
+</html>

@@ -1,0 +1,185 @@
+.searchDiv{
+    top: 60px;
+    width: 100%;
+    background: white;
+    position: fixed;
+
+    z-index: 1;
+    border-bottom: 1px solid rgb(140, 231, 238);
+    padding: 5px;
+    padding-left: 0px;
+    
+}
+
+.searchDiv input[type="search"]{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    color: #fb2525;
+    border: white;
+}
+
+.searchDiv  a{
+    
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    background: white;
+    position: fixed;
+    float: left;
+}
+.searchDiv a:hover
+{
+	cursor: pointer;
+	background: #fb2525;
+	color: white;
+	
+}
+
+
+/*------------------search Views-------------------------*/
+
+
+
+.a-card{
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid black ;
+}
+.a-card .a-info {
+    padding: 20px;
+}
+.location{
+    color: rgb(209, 30, 24);
+}
+
+.a-card .a-media img{
+    width: 100%;
+    max-width:100%;
+    object-fit: cover;
+    display: flex;
+
+    
+}
+
+@media screen and (max-width: 1068px){
+    .a-card{
+        max-width: 100%;
+    }
+   
+}
+@media screen and (max-width: 868px){
+    .a-card{
+     
+        flex-direction: column;
+
+    }
+    .a-media{
+       min-width: 100%;
+       max-width: 100%;
+       
+    }
+}
+
+@media screen and (max-width: 768px){
+    .a-card{
+        
+        flex-direction: column;
+
+    }
+    .a-media{
+       min-width: 100%;
+       max-width: 100%;
+       
+    }
+}
+
+
+/*
+    
+.a-card{
+    background: rgb(255, 14, 14);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin: 0 auto;
+    
+}
+.a-card .a-info {
+   
+}
+.a-card .a-date{
+    display: block;
+    font-size: 10px;
+    font-weight: 50px;
+
+}
+.a-card .a-media {
+   min-width: 350px;
+    max-width: 450px;
+    position: relative;
+    width: 100%;
+    transform: translateX(-15px);
+   
+}
+
+.a-card .a-media::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    height:100%;
+    width:100%;
+    background: linear-gradient(to right,rgba(72,172,254,.8),
+                                        rgba(0,254,254,.8) );
+    box-shadow: .5rem .5rem .3rem 1px rgba(0, 0,0, .05);
+    border-radius: 8px;
+}
+.a-card .a-media img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1068px){
+    .a-card{
+        max-width: 100%;
+    }
+    a.a-media{
+      
+        
+    }
+}
+@media screen and (max-width: 868px){
+    .a-card{
+     
+        flex-direction: column;
+
+    }
+    .a-media{
+       min-width: 100%;
+       max-width: 100%;
+       
+    }
+}
+
+@media screen and (max-width: 768px){
+    .a-card{
+        
+        flex-direction: column;
+
+    }
+    .a-media{
+       min-width: 100%;
+       max-width: 100%;
+       transform: translate(0,-100px);
+    }
+}
+*/

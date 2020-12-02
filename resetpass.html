@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forgotPassword.css">
+    <title>Reset password</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">C-Alert</a>
+  </header>
+ <!-------------------------- sign up  page  ----------------------------------->
+    <div class="loginbox">
+          <h1>Reset Password<h1> 
+
+            <form class ="forgotPassword" id="forgotPassword-form" >
+                  <P>Email</P>
+                  <input  type="text" placeholder="Enter email" id="setToemail" autocomplete="username" >
+                  <!--p>Password</p>   
+                  <input id="user-password" type="password" placeholder ="Enter password" autocomplete="current-password" required-->
+                  <input type="submit" id="resetBtn" value="Reset"><br>
+                  <a href ="signup.html">Create Account</a><br>
+                  <a href ="signin.html">SignIn</a>
+            </form>
+    </div>
+    <div id="pgLoader" class = "loader"></div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+</script>
+
+<script src="./fuctions/app.js"></script>
+<script src="./fuctions/resetPass.js"></script>
+
+
+</body>
+</html>

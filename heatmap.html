@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Maps Statics</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="heatmap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+   
+  </head>
+  <body>
+  <nav class="top-Nav">
+    
+    <span id="menu">&#9776; C-alert</span>
+    
+          
+          <li><a href="signin.html" class="notlogged" style="display: none;">Sign in</a></li>
+          <li><a href="signup.html" class="notlogged" style="display: none;" >Sign up</a></li>
+          <li><a  id="log-user-out" class="loggedIN" style="display: none;">Sign Out</a></li>
+   
+  </nav>
+
+  <nav id="sideMenu" class="sidenav">
+    <ul>
+      <li><h2>Search</h2></li>
+      <a href="#" class="closebtn" id="closeNav">&times;</a>
+      <li><a href="profile.html"  class="loggg">Profile</a></li>
+      <li><a href="alert.html"    class="loggg">Alert Now</a></li>
+      <li><a href="notification.html"    class="loggg">MyAlerts</a></li>
+      
+      <li><a href="logout" id="log-user-out" class="loggg">Logout</a></li>
+  </ul>
+</nav>
+  <br><br><br> <br>
+ <!-- <h1 >Crime Statics</h1>
+div class="chart"></div--> 
+<div class="rep">
+<h2 class="rheading">Provencial Report</h2>
+<br>
+<div id="chartPage">
+<div id="piechart"></div>
+</div>
+
+<table class="tableA">
+  <tr>
+    <th>Province</th>
+    <th>Crime Rate</th>
+  </tr>
+  <tr>
+    <td>Gauteng</td>
+    <td>51%</td>
+  </tr>
+
+  <tr>
+    <td>Limpopo</td>
+    <td>18%</td>
+  </tr>
+  <tr>
+    <td>KwaZulu-Natal</td>
+    <td>36%</td>
+    </tr>
+
+    <tr>
+      <td>Eastern Cape</td>
+      <td>17%</td>
+    </tr>
+    <tr>
+      <td>North West</td>
+      <td>46%</td>
+      
+      </tr>
+      <tr>
+        <td>Northern Cape</td>
+      <td>52%</td>
+      </tr>
+      <tr>
+        <td>Western Cape</td>
+        <td>13%</td>
+      
+      </tr>
+      <tr>
+        <td>Free State</td>
+      <td>4%</td>
+      </tr>
+</table>
+   
+
+</div>
+<br><br>
+  <nav class="bottom-Nav">
+    <ul class="">
+      <li><a id="Home-id"      href="index.html"><div class="h-icon"><i class="fa fa-home" aria-hidden="true" ></i></div>       <div class="a-name">Home</div></a></li>
+      <li><a id="discover-id"  href="heatmap.html"><div class="h-icon"><i class="fa fa-users" aria-hidden="true"></i></div>        <div class="a-name">Stats</div></a></li>
+      <li><a id="search-id"    href="search.html"><div class="h-icon"><i class="fa fa-search" aria-hidden="true"></i></div>       <div class="a-name">Search</div></a></li>
+      <li><a id="bookmark-id"  href="notification.html"><div class="h-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></div>   <div class="a-name">My Alerts</div>    </a></li>
+      <li><a id="profile-id"   href="profile.html"><div class="h-icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>       <div class="a-name">Profile</div></a></li>
+    </ul> 
+  </nav>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+  <script src="./fuctions/app.js"></script>
+  <script src="./fuctions/auth.js"></script>
+  <script src="./fuctions/react.js"></script>
+  <script src="./fuctions/index.js"></script>
+   
+
+  
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
+  <script type="text/javascript">
+  // Load google charts
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  // Draw the chart and set the chart values
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+   /*  ['Task', 'Hours per Day'],
+   ['Work', 8],
+    ['Eat', 2],
+    ['TV', 4],
+    ['Gym', 2],
+    ['Sleep', 8]*/
+     ['Task', 'Hours per Day'],
+    ['Limpopo', 8],
+    ['Gauteng', 8],
+    ['KwaZulu-Natal', 2],
+    ['Eastern Cape', 4],
+    ['North West', 2],
+    ['Northern Cape', 8]
+    ['Western Cape', 8]
+    ['Free State', 8]
+    ['Western Cape', 8]
+  ]);
+  
+    // Optional; add a title and set the width and height of the chart
+    var options = {'title':'Crime Statics', 'width':550, 'height':400};
+  
+    // Display the chart inside the <div> element with id="piechart"
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
+  }
+  </script>
+  
+  </body>
+  </html>
+  
+
+  </body>
+</html>
+
+
+    

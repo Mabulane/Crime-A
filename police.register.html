@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="validatesignform.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="police.css">
+    <title>signup</title>
+</head>
+<body>
+<!-------------------------- sign up  page  ----------------------------------->
+<header><a href="../index.html">C-Alert</a></header>
+	  <div class="signup-box">
+            <h1 class="hDd">Admin Sign Up<h1> </div>
+              <form class ="signup" id="signup-form" action="index.html">
+               
+                <p>Police ID number</p>
+                <input type="text"  placeholder ="Enter Id number" id="polIDnum">
+                <!--div id="verifyName"></div-->
+
+                <p>Employee NO</p>
+                <input type="text"  placeholder ="Enter name" id="empNO">
+                <!--div id="verifyName"></div-->
+
+                <P>Email</P>
+                <input type="text"  placeholder="Enter email" autocomplete="username"  id="user-email" required>
+                <!--div id="verifyEmail"></div-->
+                <p>Password</p>
+                <input  type="password"  placeholder ="Enter password" autocomplete="current-password" id="user-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required>
+                <p>comfirm password</p>
+                <input  type="password"  placeholder ="Enter password" id="confrmPwd" required>
+ <br>           <div id="pwdCmfBox"></div>
+                    <div id="checkPwd">
+                    <p>Password must contain the following:</p>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                  </div>
+
+                <input type="submit"  id="submit" value="sign up">   <br>
+               <div  class="forgot"></div> <a href ="policce.signin.html">Sign in</a><br>
+                <a  href="resetpass.html">Forgot your Password?</a><br>
+              </div>
+              </form>
+
+      <!--div class="errpopUp">
+          <div class="errpopUp-content">
+          <label for="">Update    :</label><label for="">Name</label>
+          <input type="text" name="" id="edit">   <a id="updateBtn"></a>
+         </div>
+    </div--> 
+    <div id="pgLoader" class = "loader"></div>
+              <br>
+    <br>
+ 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+</script>
+<script src="./fuctions/app.js"></script>
+<script src="./fuctions/police.js"></script>
+
+<!--script src="./fuctions/validatesignform.js"></script-->
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>profile</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+  </head>
+  <body>
+  <nav class="top-Nav">
+    
+    <span id="menu">&#9776; C-alert</span>
+    
+    <li><a href="signin.html" class="notlogged" style="display: none;">Sign in</a></li>
+    <li><a href="signup.html" class="notlogged" style="display: none;" >Sign up</a></li>
+    <li><a  id="log-user-out" class="loggedIN" style="display: none;">Sign Out</a></li>
+    
+  </nav>
+
+  <nav id="sideMenu" class="sidenav">
+    <ul>
+      <li><h2>Profile</h2></li>
+      <a href="#" class="closebtn" id="closeNav">&times;</a>
+      <li><a href="index.html"  class="loggg">Home</a></li>
+      <li><a href="alert.html"    class="loggedIN">Alert Now</a></li>
+      <li><a href="notification.html"    class="loggg">MyAlerts</a></li>
+      <!--li><a href="report.html"   class="AdminLO">Reports</a></li-->
+      
+      <li><a href="logout" id="log-user-out" class="loggedIN">Logout</a></li>
+  </ul>
+</nav>
+  <br><br><br><br>
+  <br><br>
+      <div class="user_p" id="user_p">
+        <div class="userProfile">
+          <!--div class="user_i">
+              <img src="" alt="">
+          </div-->        
+          <label class="title-label">User Profile</label><br>
+          <label >Email </label><br>
+          <label class="info" id="UserEmalAdress"></label> <!--a class="btnUpdate">Edit</a--><br>
+          <!--label >Password</label> <br>
+          <label class="info" id="user-password"></label>  <br--> 
+        <br>
+        <label >Name</label><br>
+        <label class="info" id="User-name"></label><button class="callPopUp1">Edit</button><br>  
+        <label >Surname</label> <br>
+        <label class="info" id="User-surname"></label><button class="callPopUp2">Edit</button><br> 
+        <label >Province</label> <br>
+        <label class="info" id="User-provence"></label><button class="callPopUp3">Edit</button><br> 
+        <label >Contact</label><br>
+        <label class="info"id="User-phone"></label><button class="callPopUp4">Edit</button><br>
+        <label >Gender</label><br>
+        <label class="info" id="User-gender"></label><button class="callPopUp5">Edit</button><br>
+        <label >Date registerd</label><br>
+        <label class="info" id="User-date-registed"></label><br>
+      </div> 
+      </div>   
+
+       
+         <div class="popUp">
+              <div class="popUp-content">
+                  <label for="">Update    :</label><label id="upDateFieldN" for=""></label>
+                  <input type="text" name="" id="edit">   <a id="updateBtn"></a>
+                  <label id="verifyError"></label>
+              </div>
+          </div> 
+         
+      
+
+
+      
+   
+    
+<br><br><br><br>
+
+   
+<br><br>
+  <nav class="bottom-Nav">
+    <ul class="">
+      <li><a id="Home-id"      href="index.html"><div class="h-icon"><i class="fa fa-home" aria-hidden="true" ></i></div>       <div class="a-name">Home</div></a></li>
+      <li><a id="discover-id"  href="heatmap.html"><div class="h-icon"><i class="fa fa-users" aria-hidden="true"></i></div>        <div class="a-name">Stats</div></a></li>
+      <li><a id="search-id"    href="search.html"><div class="h-icon"><i class="fa fa-search" aria-hidden="true"></i></div>       <div class="a-name">Search</div></a></li>
+      <li><a id="bookmark-id"  href="notification.html"><div class="h-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></div>   <div class="a-name">My Alerts</div>    </a></li>
+      <li><a id="profile-id"   href="profile.html"><div class="h-icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>       <div class="a-name">Profile</div></a></li>
+    </ul> 
+  </nav>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+  <script src="./fuctions/app.js"></script>
+  <script src="./fuctions/react.js"></script>
+  <script src="./fuctions/profile.js"></script>
+  <script src="./fuctions/react-profile.js"></script>
+  <script src="./fuctions/a.signout.js"></script>
+ 
+
+  </body>
+</html>
+
+
+    
